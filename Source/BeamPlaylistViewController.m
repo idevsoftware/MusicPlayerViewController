@@ -21,12 +21,7 @@
     
     // Customize table view
     UITableView *tableView = self.tableView;
-    tableView.separatorColor = [UIColor colorWithRed:0.986 green:0.933 blue:0.994 alpha:0.10];
     tableView.showsVerticalScrollIndicator = NO;
-    
-    // Add gradient as background
-    BeamRadialGradientView *playlistBackground = [[BeamRadialGradientView alloc] initWithFrame:tableView.frame];
-    tableView.backgroundView = playlistBackground;
     
     // Remove separators
     UIView *footer = [[UIView alloc] initWithFrame:CGRectZero];

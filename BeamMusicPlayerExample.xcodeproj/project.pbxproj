@@ -11,6 +11,47 @@
 		35DB90FC177BB2750039B53D /* BeamRadialGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DB90F8177BB2750039B53D /* BeamRadialGradientView.m */; };
 		35DB90FD177BB2750039B53D /* BeamPlaylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DB90FA177BB2750039B53D /* BeamPlaylistViewController.m */; };
 		6164600534AD45B89AACF5D9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D255CDAD8A6E4F49A1799F78 /* libPods.a */; };
+		8159F3AF1ACE7AF900FE4AE6 /* ExtrasListVignette@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3891ACE7AF900FE4AE6 /* ExtrasListVignette@2x.png */; };
+		8159F3B01ACE7AF900FE4AE6 /* ExtrasPlayGlyph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F38A1ACE7AF900FE4AE6 /* ExtrasPlayGlyph@2x.png */; };
+		8159F3B11ACE7AF900FE4AE6 /* miniplayer-transport-next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F38B1ACE7AF900FE4AE6 /* miniplayer-transport-next@2x.png */; };
+		8159F3B21ACE7AF900FE4AE6 /* miniplayer-transport-pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F38C1ACE7AF900FE4AE6 /* miniplayer-transport-pause@2x.png */; };
+		8159F3B31ACE7AF900FE4AE6 /* miniplayer-transport-play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F38D1ACE7AF900FE4AE6 /* miniplayer-transport-play@2x.png */; };
+		8159F3B41ACE7AF900FE4AE6 /* miniplayer-transport-previous@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F38E1ACE7AF900FE4AE6 /* miniplayer-transport-previous@2x.png */; };
+		8159F3B51ACE7AF900FE4AE6 /* miniplayer-transport-stop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F38F1ACE7AF900FE4AE6 /* miniplayer-transport-stop@2x.png */; };
+		8159F3B61ACE7AF900FE4AE6 /* MPActionSheetWhiteCheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3901ACE7AF900FE4AE6 /* MPActionSheetWhiteCheck@2x.png */; };
+		8159F3B71ACE7AF900FE4AE6 /* MPPlaceholderArtwork-Music@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3911ACE7AF900FE4AE6 /* MPPlaceholderArtwork-Music@2x.png */; };
+		8159F3B81ACE7AF900FE4AE6 /* MPPlaceholderArtwork-Podcast@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3921ACE7AF900FE4AE6 /* MPPlaceholderArtwork-Podcast@2x.png */; };
+		8159F3B91ACE7AF900FE4AE6 /* MPPlaceholderArtwork-Videos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3931ACE7AF900FE4AE6 /* MPPlaceholderArtwork-Videos@2x.png */; };
+		8159F3BA1ACE7AF900FE4AE6 /* MusicPlaceholderArtwork-Music@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3941ACE7AF900FE4AE6 /* MusicPlaceholderArtwork-Music@2x.png */; };
+		8159F3BB1ACE7AF900FE4AE6 /* now-playing-fastforward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3951ACE7AF900FE4AE6 /* now-playing-fastforward@2x.png */; };
+		8159F3BC1ACE7AF900FE4AE6 /* now-playing-pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3961ACE7AF900FE4AE6 /* now-playing-pause@2x.png */; };
+		8159F3BD1ACE7AF900FE4AE6 /* now-playing-play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3971ACE7AF900FE4AE6 /* now-playing-play@2x.png */; };
+		8159F3BE1ACE7AF900FE4AE6 /* now-playing-stop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3981ACE7AF900FE4AE6 /* now-playing-stop@2x.png */; };
+		8159F3BF1ACE7AF900FE4AE6 /* now-playing-volume-thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3991ACE7AF900FE4AE6 /* now-playing-volume-thumb@2x.png */; };
+		8159F3C01ACE7AF900FE4AE6 /* Poster@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F39A1ACE7AF900FE4AE6 /* Poster@2x.png */; };
+		8159F3C11ACE7AF900FE4AE6 /* rating-star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F39B1ACE7AF900FE4AE6 /* rating-star@2x.png */; };
+		8159F3C21ACE7AF900FE4AE6 /* Scrabble-bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F39C1ACE7AF900FE4AE6 /* Scrabble-bar@2x.png */; };
+		8159F3C31ACE7AF900FE4AE6 /* showchapters@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F39D1ACE7AF900FE4AE6 /* showchapters@2x.png */; };
+		8159F3C41ACE7AF900FE4AE6 /* Square@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F39E1ACE7AF900FE4AE6 /* Square@2x.png */; };
+		8159F3C51ACE7AF900FE4AE6 /* SystemMediaControl-Feedback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F39F1ACE7AF900FE4AE6 /* SystemMediaControl-Feedback@2x.png */; };
+		8159F3C61ACE7AF900FE4AE6 /* SystemMediaControl-Forward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3A01ACE7AF900FE4AE6 /* SystemMediaControl-Forward@2x.png */; };
+		8159F3C71ACE7AF900FE4AE6 /* SystemMediaControl-ForwardInterval@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3A11ACE7AF900FE4AE6 /* SystemMediaControl-ForwardInterval@2x.png */; };
+		8159F3C81ACE7AF900FE4AE6 /* SystemMediaControl-LikeBan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3A21ACE7AF900FE4AE6 /* SystemMediaControl-LikeBan@2x.png */; };
+		8159F3C91ACE7AF900FE4AE6 /* SystemMediaControl-Pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3A31ACE7AF900FE4AE6 /* SystemMediaControl-Pause@2x.png */; };
+		8159F3CA1ACE7AF900FE4AE6 /* SystemMediaControl-Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3A41ACE7AF900FE4AE6 /* SystemMediaControl-Play@2x.png */; };
+		8159F3CB1ACE7AF900FE4AE6 /* SystemMediaControl-Rewind@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3A51ACE7AF900FE4AE6 /* SystemMediaControl-Rewind@2x.png */; };
+		8159F3CC1ACE7AF900FE4AE6 /* SystemMediaControl-RewindInterval@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3A61ACE7AF900FE4AE6 /* SystemMediaControl-RewindInterval@2x.png */; };
+		8159F3CD1ACE7AF900FE4AE6 /* SystemMediaControl-Stop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3A71ACE7AF900FE4AE6 /* SystemMediaControl-Stop@2x.png */; };
+		8159F3CE1ACE7AF900FE4AE6 /* UIButtonBarListIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3A81ACE7AF900FE4AE6 /* UIButtonBarListIcon@2x.png */; };
+		8159F3CF1ACE7AF900FE4AE6 /* vignette-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3A91ACE7AF900FE4AE6 /* vignette-background@2x.png */; };
+		8159F3D01ACE7AF900FE4AE6 /* volume-maximum-value-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3AA1ACE7AF900FE4AE6 /* volume-maximum-value-image@2x.png */; };
+		8159F3D11ACE7AF900FE4AE6 /* volume-minimum-value-image-center@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3AB1ACE7AF900FE4AE6 /* volume-minimum-value-image-center@2x.png */; };
+		8159F3D21ACE7AF900FE4AE6 /* volume-minimum-value-image-right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3AC1ACE7AF900FE4AE6 /* volume-minimum-value-image-right@2x.png */; };
+		8159F3D31ACE7AF900FE4AE6 /* volume-minimum-value-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3AD1ACE7AF900FE4AE6 /* volume-minimum-value-image@2x.png */; };
+		8159F3D41ACE7AF900FE4AE6 /* volume-slider-thumb-view@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8159F3AE1ACE7AF900FE4AE6 /* volume-slider-thumb-view@2x.png */; };
+		81E956411AD05D88000EFCB0 /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 81E9563E1AD05D88000EFCB0 /* backbutton.png */; };
+		81E956421AD05D88000EFCB0 /* backbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81E9563F1AD05D88000EFCB0 /* backbutton@2x.png */; };
+		81E956431AD05D88000EFCB0 /* backbutton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81E956401AD05D88000EFCB0 /* backbutton@3x.png */; };
 		9708EED51579146F0097F43F /* BeamMinimalExampleProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9708EED41579146F0097F43F /* BeamMinimalExampleProvider.m */; };
 		9755DA9E1578BE2800B5431E /* AutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9755DA9C1578BBA700B5431E /* AutoScrollLabel.m */; };
 		9755DAA21578C2BE00B5431E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9755DAA11578C2BE00B5431E /* QuartzCore.framework */; };
@@ -62,6 +103,47 @@
 		35DB90F8177BB2750039B53D /* BeamRadialGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeamRadialGradientView.m; sourceTree = "<group>"; };
 		35DB90F9177BB2750039B53D /* BeamPlaylistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeamPlaylistViewController.h; sourceTree = "<group>"; };
 		35DB90FA177BB2750039B53D /* BeamPlaylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeamPlaylistViewController.m; sourceTree = "<group>"; };
+		8159F3891ACE7AF900FE4AE6 /* ExtrasListVignette@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ExtrasListVignette@2x.png"; sourceTree = "<group>"; };
+		8159F38A1ACE7AF900FE4AE6 /* ExtrasPlayGlyph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ExtrasPlayGlyph@2x.png"; sourceTree = "<group>"; };
+		8159F38B1ACE7AF900FE4AE6 /* miniplayer-transport-next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "miniplayer-transport-next@2x.png"; sourceTree = "<group>"; };
+		8159F38C1ACE7AF900FE4AE6 /* miniplayer-transport-pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "miniplayer-transport-pause@2x.png"; sourceTree = "<group>"; };
+		8159F38D1ACE7AF900FE4AE6 /* miniplayer-transport-play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "miniplayer-transport-play@2x.png"; sourceTree = "<group>"; };
+		8159F38E1ACE7AF900FE4AE6 /* miniplayer-transport-previous@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "miniplayer-transport-previous@2x.png"; sourceTree = "<group>"; };
+		8159F38F1ACE7AF900FE4AE6 /* miniplayer-transport-stop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "miniplayer-transport-stop@2x.png"; sourceTree = "<group>"; };
+		8159F3901ACE7AF900FE4AE6 /* MPActionSheetWhiteCheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPActionSheetWhiteCheck@2x.png"; sourceTree = "<group>"; };
+		8159F3911ACE7AF900FE4AE6 /* MPPlaceholderArtwork-Music@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPPlaceholderArtwork-Music@2x.png"; sourceTree = "<group>"; };
+		8159F3921ACE7AF900FE4AE6 /* MPPlaceholderArtwork-Podcast@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPPlaceholderArtwork-Podcast@2x.png"; sourceTree = "<group>"; };
+		8159F3931ACE7AF900FE4AE6 /* MPPlaceholderArtwork-Videos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPPlaceholderArtwork-Videos@2x.png"; sourceTree = "<group>"; };
+		8159F3941ACE7AF900FE4AE6 /* MusicPlaceholderArtwork-Music@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MusicPlaceholderArtwork-Music@2x.png"; sourceTree = "<group>"; };
+		8159F3951ACE7AF900FE4AE6 /* now-playing-fastforward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "now-playing-fastforward@2x.png"; sourceTree = "<group>"; };
+		8159F3961ACE7AF900FE4AE6 /* now-playing-pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "now-playing-pause@2x.png"; sourceTree = "<group>"; };
+		8159F3971ACE7AF900FE4AE6 /* now-playing-play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "now-playing-play@2x.png"; sourceTree = "<group>"; };
+		8159F3981ACE7AF900FE4AE6 /* now-playing-stop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "now-playing-stop@2x.png"; sourceTree = "<group>"; };
+		8159F3991ACE7AF900FE4AE6 /* now-playing-volume-thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "now-playing-volume-thumb@2x.png"; sourceTree = "<group>"; };
+		8159F39A1ACE7AF900FE4AE6 /* Poster@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Poster@2x.png"; sourceTree = "<group>"; };
+		8159F39B1ACE7AF900FE4AE6 /* rating-star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rating-star@2x.png"; sourceTree = "<group>"; };
+		8159F39C1ACE7AF900FE4AE6 /* Scrabble-bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Scrabble-bar@2x.png"; sourceTree = "<group>"; };
+		8159F39D1ACE7AF900FE4AE6 /* showchapters@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "showchapters@2x.png"; sourceTree = "<group>"; };
+		8159F39E1ACE7AF900FE4AE6 /* Square@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Square@2x.png"; sourceTree = "<group>"; };
+		8159F39F1ACE7AF900FE4AE6 /* SystemMediaControl-Feedback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemMediaControl-Feedback@2x.png"; sourceTree = "<group>"; };
+		8159F3A01ACE7AF900FE4AE6 /* SystemMediaControl-Forward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemMediaControl-Forward@2x.png"; sourceTree = "<group>"; };
+		8159F3A11ACE7AF900FE4AE6 /* SystemMediaControl-ForwardInterval@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemMediaControl-ForwardInterval@2x.png"; sourceTree = "<group>"; };
+		8159F3A21ACE7AF900FE4AE6 /* SystemMediaControl-LikeBan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemMediaControl-LikeBan@2x.png"; sourceTree = "<group>"; };
+		8159F3A31ACE7AF900FE4AE6 /* SystemMediaControl-Pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemMediaControl-Pause@2x.png"; sourceTree = "<group>"; };
+		8159F3A41ACE7AF900FE4AE6 /* SystemMediaControl-Play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemMediaControl-Play@2x.png"; sourceTree = "<group>"; };
+		8159F3A51ACE7AF900FE4AE6 /* SystemMediaControl-Rewind@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemMediaControl-Rewind@2x.png"; sourceTree = "<group>"; };
+		8159F3A61ACE7AF900FE4AE6 /* SystemMediaControl-RewindInterval@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemMediaControl-RewindInterval@2x.png"; sourceTree = "<group>"; };
+		8159F3A71ACE7AF900FE4AE6 /* SystemMediaControl-Stop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SystemMediaControl-Stop@2x.png"; sourceTree = "<group>"; };
+		8159F3A81ACE7AF900FE4AE6 /* UIButtonBarListIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIButtonBarListIcon@2x.png"; sourceTree = "<group>"; };
+		8159F3A91ACE7AF900FE4AE6 /* vignette-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vignette-background@2x.png"; sourceTree = "<group>"; };
+		8159F3AA1ACE7AF900FE4AE6 /* volume-maximum-value-image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "volume-maximum-value-image@2x.png"; sourceTree = "<group>"; };
+		8159F3AB1ACE7AF900FE4AE6 /* volume-minimum-value-image-center@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "volume-minimum-value-image-center@2x.png"; sourceTree = "<group>"; };
+		8159F3AC1ACE7AF900FE4AE6 /* volume-minimum-value-image-right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "volume-minimum-value-image-right@2x.png"; sourceTree = "<group>"; };
+		8159F3AD1ACE7AF900FE4AE6 /* volume-minimum-value-image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "volume-minimum-value-image@2x.png"; sourceTree = "<group>"; };
+		8159F3AE1ACE7AF900FE4AE6 /* volume-slider-thumb-view@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "volume-slider-thumb-view@2x.png"; sourceTree = "<group>"; };
+		81E9563E1AD05D88000EFCB0 /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbutton.png; sourceTree = "<group>"; };
+		81E9563F1AD05D88000EFCB0 /* backbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backbutton@2x.png"; sourceTree = "<group>"; };
+		81E956401AD05D88000EFCB0 /* backbutton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backbutton@3x.png"; sourceTree = "<group>"; };
 		92FDA17ACE6F4C928D2E08D9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		9708EED31579146F0097F43F /* BeamMinimalExampleProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BeamMinimalExampleProvider.h; path = "Example Providers/BeamMinimalExampleProvider.h"; sourceTree = "<group>"; };
 		9708EED41579146F0097F43F /* BeamMinimalExampleProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BeamMinimalExampleProvider.m; path = "Example Providers/BeamMinimalExampleProvider.m"; sourceTree = "<group>"; };
@@ -144,6 +226,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8159F3881ACE7AF900FE4AE6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				81E9563E1AD05D88000EFCB0 /* backbutton.png */,
+				81E9563F1AD05D88000EFCB0 /* backbutton@2x.png */,
+				81E956401AD05D88000EFCB0 /* backbutton@3x.png */,
+				8159F3891ACE7AF900FE4AE6 /* ExtrasListVignette@2x.png */,
+				8159F38A1ACE7AF900FE4AE6 /* ExtrasPlayGlyph@2x.png */,
+				8159F38B1ACE7AF900FE4AE6 /* miniplayer-transport-next@2x.png */,
+				8159F38C1ACE7AF900FE4AE6 /* miniplayer-transport-pause@2x.png */,
+				8159F38D1ACE7AF900FE4AE6 /* miniplayer-transport-play@2x.png */,
+				8159F38E1ACE7AF900FE4AE6 /* miniplayer-transport-previous@2x.png */,
+				8159F38F1ACE7AF900FE4AE6 /* miniplayer-transport-stop@2x.png */,
+				8159F3901ACE7AF900FE4AE6 /* MPActionSheetWhiteCheck@2x.png */,
+				8159F3911ACE7AF900FE4AE6 /* MPPlaceholderArtwork-Music@2x.png */,
+				8159F3921ACE7AF900FE4AE6 /* MPPlaceholderArtwork-Podcast@2x.png */,
+				8159F3931ACE7AF900FE4AE6 /* MPPlaceholderArtwork-Videos@2x.png */,
+				8159F3941ACE7AF900FE4AE6 /* MusicPlaceholderArtwork-Music@2x.png */,
+				8159F3951ACE7AF900FE4AE6 /* now-playing-fastforward@2x.png */,
+				8159F3961ACE7AF900FE4AE6 /* now-playing-pause@2x.png */,
+				8159F3971ACE7AF900FE4AE6 /* now-playing-play@2x.png */,
+				8159F3981ACE7AF900FE4AE6 /* now-playing-stop@2x.png */,
+				8159F3991ACE7AF900FE4AE6 /* now-playing-volume-thumb@2x.png */,
+				8159F39A1ACE7AF900FE4AE6 /* Poster@2x.png */,
+				8159F39B1ACE7AF900FE4AE6 /* rating-star@2x.png */,
+				8159F39C1ACE7AF900FE4AE6 /* Scrabble-bar@2x.png */,
+				8159F39D1ACE7AF900FE4AE6 /* showchapters@2x.png */,
+				8159F39E1ACE7AF900FE4AE6 /* Square@2x.png */,
+				8159F39F1ACE7AF900FE4AE6 /* SystemMediaControl-Feedback@2x.png */,
+				8159F3A01ACE7AF900FE4AE6 /* SystemMediaControl-Forward@2x.png */,
+				8159F3A11ACE7AF900FE4AE6 /* SystemMediaControl-ForwardInterval@2x.png */,
+				8159F3A21ACE7AF900FE4AE6 /* SystemMediaControl-LikeBan@2x.png */,
+				8159F3A31ACE7AF900FE4AE6 /* SystemMediaControl-Pause@2x.png */,
+				8159F3A41ACE7AF900FE4AE6 /* SystemMediaControl-Play@2x.png */,
+				8159F3A51ACE7AF900FE4AE6 /* SystemMediaControl-Rewind@2x.png */,
+				8159F3A61ACE7AF900FE4AE6 /* SystemMediaControl-RewindInterval@2x.png */,
+				8159F3A71ACE7AF900FE4AE6 /* SystemMediaControl-Stop@2x.png */,
+				8159F3A81ACE7AF900FE4AE6 /* UIButtonBarListIcon@2x.png */,
+				8159F3A91ACE7AF900FE4AE6 /* vignette-background@2x.png */,
+				8159F3AA1ACE7AF900FE4AE6 /* volume-maximum-value-image@2x.png */,
+				8159F3AB1ACE7AF900FE4AE6 /* volume-minimum-value-image-center@2x.png */,
+				8159F3AC1ACE7AF900FE4AE6 /* volume-minimum-value-image-right@2x.png */,
+				8159F3AD1ACE7AF900FE4AE6 /* volume-minimum-value-image@2x.png */,
+				8159F3AE1ACE7AF900FE4AE6 /* volume-slider-thumb-view@2x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		9708EED11579143C0097F43F /* Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +404,7 @@
 		97E9DA6C157682A700620689 /* Music Player */ = {
 			isa = PBXGroup;
 			children = (
+				8159F3881ACE7AF900FE4AE6 /* Assets */,
 				CBCD885A15B44165001B7A1D /* BeamMusicPlayerController.bundle */,
 				CB35A6FD1576918F008318EE /* BeamMusicPlayerViewController.h */,
 				CB35A6FE1576918F008318EE /* BeamMusicPlayerViewController.m */,
@@ -355,7 +486,7 @@
 			name = BeamMusicPlayerExampleTests;
 			productName = BeamMusicPlayerExampleTests;
 			productReference = 97B7AA5215760AAF0014E693 /* BeamMusicPlayerExampleTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -391,10 +522,51 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8159F3CB1ACE7AF900FE4AE6 /* SystemMediaControl-Rewind@2x.png in Resources */,
+				8159F3B91ACE7AF900FE4AE6 /* MPPlaceholderArtwork-Videos@2x.png in Resources */,
 				97B7AA3D15760AAF0014E693 /* InfoPlist.strings in Resources */,
+				8159F3B41ACE7AF900FE4AE6 /* miniplayer-transport-previous@2x.png in Resources */,
+				8159F3C61ACE7AF900FE4AE6 /* SystemMediaControl-Forward@2x.png in Resources */,
+				8159F3C41ACE7AF900FE4AE6 /* Square@2x.png in Resources */,
+				8159F3BC1ACE7AF900FE4AE6 /* now-playing-pause@2x.png in Resources */,
 				CBCD885B15B44165001B7A1D /* BeamMusicPlayerController.bundle in Resources */,
+				8159F3B31ACE7AF900FE4AE6 /* miniplayer-transport-play@2x.png in Resources */,
+				8159F3C21ACE7AF900FE4AE6 /* Scrabble-bar@2x.png in Resources */,
+				8159F3CC1ACE7AF900FE4AE6 /* SystemMediaControl-RewindInterval@2x.png in Resources */,
+				8159F3C71ACE7AF900FE4AE6 /* SystemMediaControl-ForwardInterval@2x.png in Resources */,
+				8159F3B11ACE7AF900FE4AE6 /* miniplayer-transport-next@2x.png in Resources */,
+				8159F3B81ACE7AF900FE4AE6 /* MPPlaceholderArtwork-Podcast@2x.png in Resources */,
+				8159F3CE1ACE7AF900FE4AE6 /* UIButtonBarListIcon@2x.png in Resources */,
+				8159F3BD1ACE7AF900FE4AE6 /* now-playing-play@2x.png in Resources */,
+				8159F3C91ACE7AF900FE4AE6 /* SystemMediaControl-Pause@2x.png in Resources */,
+				8159F3CD1ACE7AF900FE4AE6 /* SystemMediaControl-Stop@2x.png in Resources */,
+				81E956431AD05D88000EFCB0 /* backbutton@3x.png in Resources */,
+				8159F3BF1ACE7AF900FE4AE6 /* now-playing-volume-thumb@2x.png in Resources */,
 				CB0DC58F15B6AD300045921A /* BeamMusicPlayerViewController.xib in Resources */,
+				8159F3C11ACE7AF900FE4AE6 /* rating-star@2x.png in Resources */,
+				81E956421AD05D88000EFCB0 /* backbutton@2x.png in Resources */,
+				8159F3C31ACE7AF900FE4AE6 /* showchapters@2x.png in Resources */,
+				8159F3CF1ACE7AF900FE4AE6 /* vignette-background@2x.png in Resources */,
+				8159F3D41ACE7AF900FE4AE6 /* volume-slider-thumb-view@2x.png in Resources */,
+				8159F3BB1ACE7AF900FE4AE6 /* now-playing-fastforward@2x.png in Resources */,
+				8159F3C81ACE7AF900FE4AE6 /* SystemMediaControl-LikeBan@2x.png in Resources */,
+				8159F3B71ACE7AF900FE4AE6 /* MPPlaceholderArtwork-Music@2x.png in Resources */,
+				8159F3AF1ACE7AF900FE4AE6 /* ExtrasListVignette@2x.png in Resources */,
+				8159F3B61ACE7AF900FE4AE6 /* MPActionSheetWhiteCheck@2x.png in Resources */,
 				CB273946174BA38100977530 /* Default-568h@2x.png in Resources */,
+				81E956411AD05D88000EFCB0 /* backbutton.png in Resources */,
+				8159F3D01ACE7AF900FE4AE6 /* volume-maximum-value-image@2x.png in Resources */,
+				8159F3D11ACE7AF900FE4AE6 /* volume-minimum-value-image-center@2x.png in Resources */,
+				8159F3D31ACE7AF900FE4AE6 /* volume-minimum-value-image@2x.png in Resources */,
+				8159F3BA1ACE7AF900FE4AE6 /* MusicPlaceholderArtwork-Music@2x.png in Resources */,
+				8159F3B51ACE7AF900FE4AE6 /* miniplayer-transport-stop@2x.png in Resources */,
+				8159F3CA1ACE7AF900FE4AE6 /* SystemMediaControl-Play@2x.png in Resources */,
+				8159F3C01ACE7AF900FE4AE6 /* Poster@2x.png in Resources */,
+				8159F3D21ACE7AF900FE4AE6 /* volume-minimum-value-image-right@2x.png in Resources */,
+				8159F3C51ACE7AF900FE4AE6 /* SystemMediaControl-Feedback@2x.png in Resources */,
+				8159F3B01ACE7AF900FE4AE6 /* ExtrasPlayGlyph@2x.png in Resources */,
+				8159F3BE1ACE7AF900FE4AE6 /* now-playing-stop@2x.png in Resources */,
+				8159F3B21ACE7AF900FE4AE6 /* miniplayer-transport-pause@2x.png in Resources */,
 				A3CD1673174BC6BD0043ACEE /* BeamMusicPlayerViewController~ipad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -159,7 +159,7 @@
 {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"BeamMusicPlayerController.bundle/images/black_linen_v2"]];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     // Scrobble overlay should always be visible on tall phones
     if(self.isTallPhone) {
@@ -170,26 +170,15 @@
             self.scrobbleOverlay.alpha = 0;
             self.coverArtGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(coverArtTapped:)];
             [self.albumArtImageView addGestureRecognizer:self.coverArtGestureRecognizer];
-        } else {
-            if(!self.isIOS7) {
-                //on ipad use shadow behind cover art
-                self.albumArtImageView.layer.shadowColor = [UIColor blackColor].CGColor;
-                self.albumArtImageView.layer.shadowOpacity = 0.8;
-                self.albumArtImageView.layer.shadowRadius = 10.0;
-                self.albumArtImageView.layer.shadowOffset = CGSizeMake(0.0f, 0.0f);
-                self.albumArtImageView.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.albumArtImageView.bounds].CGPath;
-            }
         }
     }
     
     // Progess Slider
-    UIImage* knob = [UIImage imageNamed:@"BeamMusicPlayerController.bundle/images/VolumeKnob"];
+    UIImage* knob = [UIImage imageNamed:@"Scrabble-bar.png"];
     [progressSlider setThumbImage:knob forState:UIControlStateNormal];
-    progressSlider.maximumTrackTintColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1];
-    UIImage* minImg = [[UIImage imageNamed:@"BeamMusicPlayerController.bundle/images/speakerSliderMinValue.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 16, 0, 16)];
-    UIImage* maxImg = [[UIImage imageNamed:@"BeamMusicPlayerController.bundle/images/speakerSliderMaxValue.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 16, 0, 16)];
-    [progressSlider setMinimumTrackImage:minImg forState:UIControlStateNormal];
-    [progressSlider setMaximumTrackImage:maxImg forState:UIControlStateNormal];
+    progressSlider.minimumTrackTintColor = [UIColor darkGrayColor];
+    progressSlider.maximumTrackTintColor = [UIColor lightGrayColor];
+    
     
     // Volume Slider
     volumeViewContainer.backgroundColor = [UIColor clearColor];
@@ -199,24 +188,26 @@
         notSupportedLabel.frame = volumeViewContainer.bounds;
         notSupportedLabel.text = @"No Volume Available";
         notSupportedLabel.backgroundColor = [UIColor clearColor];
-        notSupportedLabel.textColor = [UIColor whiteColor];
+        notSupportedLabel.textColor = [UIColor blackColor];
         notSupportedLabel.textAlignment = NSTextAlignmentCenter;
         notSupportedLabel.font = [UIFont boldSystemFontOfSize:13];
         [volumeViewContainer addSubview:notSupportedLabel];
     }
 #else
+    
+    self.volumeView.tintColor = [UIColor blackColor];
+    
     // Since there is a bug/glitch in iOS with setting the thumb, we need to use an image with 5pt transparency at the bottom
-    UIImage* knobImg = [UIImage imageNamed:@"BeamMusicPlayerController.bundle/images/mpSpeakerSliderKnob.png"];
+    UIImage* knobImg = [UIImage imageNamed:@"now-playing-volume-thumb.png"];
     [self.volumeView setVolumeThumbImage:knobImg forState:UIControlStateNormal];
     [self.volumeView setVolumeThumbImage:knobImg forState:UIControlStateHighlighted];
-    [self.volumeView setMinimumVolumeSliderImage:minImg forState:UIControlStateNormal];
-    [self.volumeView setMaximumVolumeSliderImage:maxImg forState:UIControlStateNormal];
+    
 #endif
     
     // explicit tint buttons (remove typo in comment, here ;)
-    rewindButton.tintColor = UIColor.whiteColor;
-    playButton.tintColor = UIColor.whiteColor;
-    fastForwardButton.tintColor = UIColor.whiteColor;
+    rewindButton.tintColor = [UIColor blackColor];
+    playButton.tintColor = [UIColor blackColor];
+    fastForwardButton.tintColor = [UIColor blackColor];
     
     // The Original Toolbar is 48px high in the iPod/Music app
     CGRect toolbarRect = self.controlsToolbar.frame;
@@ -226,40 +217,33 @@
     // Set UI to non-scrobble
     [self setScrobbleUI:NO animated:NO];
     
-    // Set up labels. These are autoscrolling and need code-base setup.
-    [self.artistNameLabel setShadowColor:[UIColor blackColor]];
-    [self.artistNameLabel setShadowOffset:CGSizeMake(0, -1)];
-    
-    [self.albumTitleLabel setShadowColor:[UIColor blackColor]];
-    [self.albumTitleLabel setShadowOffset:CGSizeMake(0, -1)];
+    UIColor *labelColor = [UIColor blackColor];
 
     if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone){
-        [self.artistNameLabel setTextColor:[UIColor lightTextColor]];
-        [self.artistNameLabel setFont:[UIFont boldSystemFontOfSize:12]];
+        [self.artistNameLabel setTextColor:labelColor];
+        [self.artistNameLabel setFont:[UIFont systemFontOfSize:12]];
         
-        [self.albumTitleLabel setTextColor:[UIColor lightTextColor]];
-        [self.albumTitleLabel setFont:[UIFont boldSystemFontOfSize:12]];
+        [self.albumTitleLabel setTextColor:labelColor];
+        [self.albumTitleLabel setFont:[UIFont systemFontOfSize:12]];
         
-        self.trackTitleLabel.textColor = [UIColor whiteColor];
-        [self.trackTitleLabel setFont:[UIFont boldSystemFontOfSize:12]];
+        self.trackTitleLabel.textColor = labelColor;
+        [self.trackTitleLabel setFont:[UIFont systemFontOfSize:12]];
     } else {
-        self.artistNameLabel.textColor = [UIColor lightTextColor];
-        [self.artistNameLabel setFont:[UIFont boldSystemFontOfSize:14]];
+        self.artistNameLabel.textColor = labelColor;
+        [self.artistNameLabel setFont:[UIFont systemFontOfSize:14]];
         
-        self.albumTitleLabel.textColor = [UIColor lightTextColor];
-        [self.albumTitleLabel setFont:[UIFont boldSystemFontOfSize:14]];
+        self.albumTitleLabel.textColor = labelColor;
+        [self.albumTitleLabel setFont:[UIFont systemFontOfSize:14]];
         
-        self.trackTitleLabel.textColor = [UIColor lightGrayColor];
-        [self.trackTitleLabel setFont:[UIFont boldSystemFontOfSize:18]];
-        
-        [self.trackTitleLabel setShadowColor:[UIColor blackColor]];
-        [self.trackTitleLabel setShadowOffset:CGSizeMake(0, -1)];
+        self.trackTitleLabel.textColor = labelColor;
+        [self.trackTitleLabel setFont:[UIFont systemFontOfSize:18]];
     }
     
     if(self.isIOS7) {
         CGFloat statusBarHeight = UIApplication.sharedApplication.statusBarFrame.size.height;
         self.navigationBar.frame = CGRectOffset(self.navigationBar.frame, 0, statusBarHeight);
         self.navigationBar.tintColor = UIColor.whiteColor;
+       
         CGRect f = self.artworkPlaylistContainer.frame;
         f.origin.y += statusBarHeight;
         f.size.height -= statusBarHeight;
@@ -270,7 +254,7 @@
             self.scrobbleBackgroundImage.hidden = YES;
         }
         
-        self.controlsToolbar.tintColor = UIColor.whiteColor;
+        self.controlsToolbar.tintColor = [UIColor blackColor];
         self.progressSlider.frame = CGRectOffset(self.progressSlider.frame, 0, -3);
     }
     
@@ -278,11 +262,9 @@
 
     
     // Create the playlist button
-    UIImage *barButtonBackground = [[UIImage imageNamed:@"BeamMusicPlayerController.bundle/images/bar_button"] resizableImageWithCapInsets:UIEdgeInsetsMake(0.0f, 4.0f, 0.0f, 4.0f)];
     
     UIButton *playlistButton = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 40.0f, 30.0f)];
-    [playlistButton setImage:[UIImage imageNamed:@"BeamMusicPlayerController.bundle/images/playlist"] forState:UIControlStateNormal];
-    [playlistButton setBackgroundImage:barButtonBackground forState:UIControlStateNormal];
+    [playlistButton setImage:[UIImage imageNamed:@"UIButtonBarListIcon.png"] forState:UIControlStateNormal];
     [playlistButton addTarget:self action:@selector(playlistButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     [playlistButton.imageView setContentMode:UIViewContentModeScaleAspectFit];
     self.playlistToggleButton = playlistButton;
@@ -660,26 +642,43 @@
 }
 
 -(void)updateRepeatButton {
+    
+    self.repeatButton.tintColor = [UIColor blackColor];
+    
+    self.repeatButton.layer.masksToBounds  = YES;
+    self.repeatButton.layer.cornerRadius = 2.0f;
+    
     MPMusicRepeatMode currentMode = self->repeatMode;
-    NSString* imageName = nil;
+    
     switch (currentMode) {
         case MPMusicRepeatModeDefault:
-            imageName = @"repeat_off.png";
+        {
+            [self.repeatButton setTitle:NSLocalizedString(@"Repeat", @"") forState:UIControlStateNormal];
+            [self.repeatButton setBackgroundColor:[UIColor clearColor]];
+            [self.repeatButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        }
             break;
         case MPMusicRepeatModeOne:
-            imageName = @"repeat_on_1.png";
+        {
+            [self.repeatButton setTitle:NSLocalizedString(@"Repeat song", @"") forState:UIControlStateNormal];
+            [self.repeatButton setBackgroundColor:[UIColor blackColor]];
+            [self.repeatButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        }
             break;
         case MPMusicRepeatModeAll:
-            imageName = @"repeat_on.png";
+        {
+            [self.repeatButton setTitle:NSLocalizedString(@"Repeat all", @"") forState:UIControlStateNormal];
+            [self.repeatButton setBackgroundColor:[UIColor blackColor]];
+            [self.repeatButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        }
             break;
     }
-    if ( imageName )
-        [self.repeatButton setImage:[UIImage imageNamed:[@"BeamMusicPlayerController.bundle/images/" stringByAppendingString:imageName]] forState:UIControlStateNormal];
+        
 }
 
 #pragma mark Repeat mode
 
--(void)setRepeatMode:(int)newRepeatMode {
+-(void)setRepeatMode:(MPMusicRepeatMode)newRepeatMode {
     self->repeatMode = newRepeatMode;
     [self updateRepeatButton];
 }
@@ -689,8 +688,18 @@
 -(void)setShuffling:(BOOL)newShuffling {
     self->shuffling = newShuffling;
     
-    NSString* imageName = ( self.shuffling ? @"shuffle_on.png" : @"shuffle_off.png");
-    [self.shuffleButton setImage:[UIImage imageNamed:[@"BeamMusicPlayerController.bundle/images/" stringByAppendingString:imageName]] forState:UIControlStateNormal];
+    [self.shuffleButton setTitle:NSLocalizedString(@"Shuffle", @"") forState:UIControlStateNormal];
+    
+    self.shuffleButton.layer.masksToBounds = YES;
+    self.shuffleButton.layer.cornerRadius = 2.0f;
+    
+    if (self.shuffling) {
+        [self.shuffleButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [self.shuffleButton setBackgroundColor:[UIColor blackColor]];
+    } else {
+        [self.shuffleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [self.shuffleButton setBackgroundColor:[UIColor clearColor]];
+    }
 }
 
 #pragma mark - User Interface ACtions
@@ -836,8 +845,7 @@
                            options:UIViewAnimationOptionTransitionFlipFromLeft
                         animations:^{
                             
-                            [self.playlistToggleButton setBackgroundImage:[[UIImage imageNamed:@"BeamMusicPlayerController.bundle/images/bar_button"] resizableImageWithCapInsets:UIEdgeInsetsMake(0.0f, 4.0f, 0.0f, 4.0f)] forState:UIControlStateNormal];
-                            [self.playlistToggleButton setImage:[UIImage imageNamed:@"BeamMusicPlayerController.bundle/images/playlist"] forState:UIControlStateNormal];
+                            [self.playlistToggleButton setImage:[UIImage imageNamed:@"UIButtonBarListIcon.png"] forState:UIControlStateNormal];
                         }
                         completion:^(BOOL finished){
                             self.playlistToggleButton.adjustsImageWhenDisabled = YES;
@@ -874,11 +882,11 @@
  */
 -(void)adjustPlayButtonState {
     if ( !self.playing ){
-        self.playButton.image = [UIImage imageNamed:@"BeamMusicPlayerController.bundle/images/play.png"];
-        [self.playButtonIPad setImage:[UIImage imageNamed:@"BeamMusicPlayerController.bundle/images/play.png"] forState:UIControlStateNormal];
+        self.playButton.image = [UIImage imageNamed:@"now-playing-play.png"];
+        [self.playButtonIPad setImage:[UIImage imageNamed:@"now-playing-play.png"] forState:UIControlStateNormal];
     } else {
-        self.playButton.image = [UIImage imageNamed:@"BeamMusicPlayerController.bundle/images/pause.png"];
-        [self.playButtonIPad setImage:[UIImage imageNamed:@"BeamMusicPlayerController.bundle/images/pause.png"] forState:UIControlStateNormal];
+        self.playButton.image = [UIImage imageNamed:@"now-playing-pause.png"];
+        [self.playButtonIPad setImage:[UIImage imageNamed:@"now-playing-pause.png"] forState:UIControlStateNormal];
     }
 }
 

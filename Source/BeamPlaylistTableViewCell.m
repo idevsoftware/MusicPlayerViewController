@@ -66,11 +66,6 @@
         _titleLabel.backgroundColor = [UIColor clearColor];
         _durationLabel.backgroundColor = [UIColor clearColor];
         
-        // Uncomment to see the frames of the labels (useful for debugging)
-//        _trackLabel.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.5];
-//        _titleLabel.backgroundColor = [[UIColor yellowColor] colorWithAlphaComponent:0.5f];
-//        _durationLabel.backgroundColor = [[UIColor greenColor] colorWithAlphaComponent:0.5f];
-        
         _trackLabel.textAlignment = NSTextAlignmentLeft;
         _titleLabel.textAlignment = NSTextAlignmentLeft;
         _durationLabel.textAlignment = NSTextAlignmentRight;
@@ -97,8 +92,8 @@
         [self addSubview:_playingImageView];
         
         // Set default font and textColor
-        self.font = [UIFont boldSystemFontOfSize:15.0f];
-        self.textColor = [UIColor whiteColor];
+        self.font = [UIFont systemFontOfSize:15.0f];
+        self.textColor = [UIColor blackColor];
     }
     return self;
 }
@@ -132,7 +127,8 @@
     // Show playing image if it is the current song
     if (currentSong)
     {
-        [self.playingImageView setImage:[UIImage imageNamed:@"BeamMusicPlayerController.bundle/images/playing"]];
+        [self.playingImageView setImage:[UIImage imageNamed:@"miniplayer-transport-play.png"]];
+        self.playingImageView.contentMode = UIViewContentModeCenter;
     }
     else
     {
