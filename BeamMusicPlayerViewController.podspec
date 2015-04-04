@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '5.0'
   s.source_files = 'Source/*.{h,m}'
   s.exclude_files = 'Source/BeamMPMusicPlayerProvider.{h,m}'
-  s.resources = 'Source/*.{bundle,xib}', 
+  s.resources = 'Source/*.*', 
   s.frameworks = 'CoreGraphics'
   s.requires_arc = true
   s.dependency 'OBSlider', '~> 1.1'
